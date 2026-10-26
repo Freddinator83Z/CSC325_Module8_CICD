@@ -6,3 +6,5 @@ def hello(request):
     return Response({
         "message": "Hello from CSC 325 CI/CD!"
     })
+
+# CI/CD pull request test
