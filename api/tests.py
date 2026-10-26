@@ -12,5 +12,13 @@ class HelloAPITests(TestCase):
         response = self.client.get(reverse('hello'))
         self.assertEqual(
             response.json()['message'],
-           'Hello from CSC 325 CI/CD!'
+            'Hello from CSC 325 CI/CD!'
+        )
+
+    def test_hello_status(self):
+        response = self.client.get(reverse('hello'))
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.json()['status'],
+            'CI/CD pipeline working!'
         )
