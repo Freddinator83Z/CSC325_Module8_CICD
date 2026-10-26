@@ -4,5 +4,7 @@ from rest_framework.response import Response
 @api_view(['GET'])
 def hello(request):
     return Response({
-        "message": "Hello from CSC 325!"
+        "message": "Hello from CSC 325 CI/CD!"
     })
+
+# CI/CD pull request test
