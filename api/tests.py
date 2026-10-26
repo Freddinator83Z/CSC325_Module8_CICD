@@ -12,5 +12,5 @@ class HelloAPITests(TestCase):
         response = self.client.get(reverse('hello'))
         self.assertEqual(
             response.json()['message'],
-            'Hello from CSC 325!'
+           'Hello from CSC 325 CI/CD!'
         )
